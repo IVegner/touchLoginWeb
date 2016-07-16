@@ -1,14 +1,20 @@
 $(document).ready(function() {
 
+	//Email grabber pop-up
 	var waypoint = new Waypoint({
 	  element: $('#whenIsLaunch'),
 	  handler: function() {
-	    $("#email-modal").modal();
+	  	var modal = $("#email-modal");
+	    modal.modal();
 	    waypoint.disable();
+
+	    //And now for fixing some weird and confusing bugs in HTML/CSS
+	    modal.css({"padding-right":"", "pointer-events":"none"});
 	  },
 	  offset: "50%"
 	})
 
+	// Transparent Navbar when above fold
 	window.onscroll = function() {
 		if (document.body.scrollTop < $(window).height()*2/3){		//This is for the transparent navbar
 			$("#custom-navbar.navbar-default").addClass("transparent-navbar");
@@ -17,6 +23,7 @@ $(document).ready(function() {
 		}
 	}
 
+	// Smooth anchor scrolling
 	$('a[href^="#"]').on('click',function (e) {
 		e.preventDefault();
 

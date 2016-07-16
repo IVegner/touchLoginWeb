@@ -61,7 +61,7 @@ Monaco,
 Consolas,
 "Courier New",
 monospace;
-@font-family-base : Pontano Sans;
+@font-family-base : Ubuntu;
 @font-size-base : 14px;
 @font-size-large : ceil((@font-size-base * 1.25)); // ~18px
 @font-size-small : ceil((@font-size-base * 0.85)); // ~12px
@@ -76,7 +76,7 @@ monospace;
 //** Computed "line-height" (`font-size` * `line-height`) for use with `margin`, `padding`, etc.
 @line-height-computed : floor((@font-size-base * @line-height-base)); // ~20px
 //** By default, this inherits from the `<body>`.
-@headings-font-family : Montserrat;
+@headings-font-family : Libre Baskerville;
 @headings-font-weight : 500;
 @headings-line-height : 1.1;
 @headings-color : inherit;
@@ -750,7 +750,6 @@ body {
 .landing-icon {
   width: auto;
   height: 15%;
-  max-width: 100px;
 }
 
 .centered {
@@ -853,6 +852,10 @@ body {
   .modal {
     padding: 0;
   }
+  #signUpForEarlyAccess {
+    float: none!important;
+    width: 100%!important;
+  }
 }
 
 .intro-cover-button {
@@ -888,13 +891,19 @@ body {
   margin-right: 0 !important;
 }
 
-.presentationBlock {
-  -webkit-align-self: center;
-  /* Safari 7.0+ */
-  align-self: center;
-  //margin-top: 25vh;
+#signUpForEarlyAccess {
+  margin-left: 5%;
+  float: right;
+  background-color: #F8F8F8;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
 }
 
-.full-screen-section {
-  height: 100vh;
+.row-eq-height {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
 }

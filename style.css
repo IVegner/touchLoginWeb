@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Montserrat|Pontano Sans');
+@import url('https://fonts.googleapis.com/css?family=Libre Baskerville|Ubuntu');
 /*!
  * Default theme for Pingendo 
  * Homepage: http://pingendo.com  
@@ -1086,7 +1086,7 @@ html {
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 body {
-  font-family: Pontano Sans;
+  font-family: Ubuntu;
   font-size: 14px;
   line-height: 1.42857143;
   color: #000000;
@@ -1188,7 +1188,7 @@ h6,
 .h4,
 .h5,
 .h6 {
-  font-family: Montserrat;
+  font-family: Libre Baskerville;
   font-weight: 500;
   line-height: 1.1;
   color: inherit;
@@ -5825,7 +5825,7 @@ button.close {
   position: absolute;
   z-index: 1070;
   display: block;
-  font-family: Pontano Sans;
+  font-family: Ubuntu;
   font-size: 12px;
   font-weight: normal;
   line-height: 1.4;
@@ -5932,7 +5932,7 @@ button.close {
   display: none;
   max-width: 276px;
   padding: 1px;
-  font-family: Pontano Sans;
+  font-family: Ubuntu;
   font-size: 14px;
   font-weight: normal;
   line-height: 1.42857143;
@@ -6790,7 +6790,6 @@ body {
 .landing-icon {
   width: auto;
   height: 15%;
-  max-width: 100px;
 }
 .centered {
   text-align: center;
@@ -6875,6 +6874,10 @@ body {
   .modal {
     padding: 0;
   }
+  #signUpForEarlyAccess {
+    float: none!important;
+    width: 100%!important;
+  }
 }
 .intro-cover-button {
   padding-left: 7%;
@@ -6904,11 +6907,18 @@ body {
 .modal-open .navbar-fixed-top {
   margin-right: 0 !important;
 }
-.presentationBlock {
-  -webkit-align-self: center;
-  /* Safari 7.0+ */
-  align-self: center;
+#signUpForEarlyAccess {
+  margin-left: 5%;
+  float: right;
+  background-color: #F8F8F8;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
 }
-.full-screen-section {
-  height: 100vh;
+.row-eq-height {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
 }
